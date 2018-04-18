@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>登录</title>
+    <!--字体图标-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="font/css/font-awesome.min.css" rel="stylesheet" />
+    <!--默认公共样式-->
+    <link href="font/css/base.css" rel="stylesheet" />
+    <!--本页样式-->
+    <link href="css/login.css" rel="stylesheet" />
+    <script src="scripts/jquery-1.10.2.js"></script>
+    <!--字体图标-->
+    <script src="scripts/bootstrap.min.js"></script>
+    <!--本页js-->
+    <script src="scripts/login.js"></script>
+</head>
+<body>
+    <header class="WebHead tc">
+        <img src="images/cordova.png" class="w80 h80" />
+    </header>
+    <div class="LoginCont p30">
+        <div class="loginInput p10 mt20">
+            <input type="text" value="" class="userName" placeholder="手机号/邮箱/会员名" />
+            <i class="fa fa-times-circle fr mt5"></i>
+        </div>
+        <div class="loginInput p10 mt20">
+            <input type="password" value="" class="userPwd" placeholder="输入密码" />
+            <i class="fa fa-times-circle fr mt5"></i>
+        </div>
+        <div class="mt20">
+            <a href="#">免费注册</a>
+            <a href="#" class="fr">忘记密码</a>
+        </div>
+        <div class="mt20">
+            <button type="button" class="btn btn-danger p10 boxb">登录</button>
+        </div>
+        <div class="mt20">
+            <button type="button" class="btn btn-outline-danger p10 boxb">短信验证码登录</button>
+        </div>
+    </div>
+</body>
+</html>

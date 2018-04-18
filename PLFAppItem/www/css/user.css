@@ -1,0 +1,41 @@
+﻿body{
+    background-color:#f5f5f5;
+}
+header {
+    width: 100%;
+    min-height: 120px;
+    background-color:#fff;
+    background-image: url('../images/userpage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+}
+.userImg {
+    left: 10px;
+    bottom: 10px;
+    border-radius: 100%;
+    z-index: 1;
+    box-shadow: 0px 0px 10px 0px #fff;
+    border: 1px solid #fff;
+}
+.Setup a{
+    color:#fff;
+    background-color:rgba(0,0,0,0.4);
+    border-radius:15px;
+    padding:5px 10px;
+}
+.userName {
+    margin-left: 100px;
+    margin-top: 40px;
+    color:#fff;
+    font-size:1.2rem;
+}
+.headCont{
+    background-color:#fff;
+    padding-left:100px;
+    font-size:0.86rem;
+}
+.headCont a{
+    color:#444;
+}

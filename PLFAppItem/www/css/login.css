@@ -1,0 +1,49 @@
+﻿.WebHead{
+    margin:50px 0px 20px 0px;
+}
+input:focus{
+    outline:none;
+}
+.WebHead img {
+    border-radius: 100%;
+}
+.loginInput {
+    border-bottom: 1px solid #dc3545;
+    background-color: transparent;
+    overflow:hidden;
+}
+.loginInput input {
+    background-color: transparent;
+    border:0;
+    width:80%;
+    color:#dc3545;
+}
+input::-webkit-input-placeholder {
+    color: #dc3545;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #dc3545;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #dc3545;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #dc3545;
+}
+.loginInput .fa-times-circle{
+    color:#999;
+    font-size:1.2rem;
+    line-height:1.2rem;
+}
+.LoginCont a{
+    color:#999;
+    font-size:0.9rem;
+}
+.mt20 button {
+    width: 100%;
+    box-shadow: 0 0.08rem 0.16rem #f7c7b1;
+    border-radius: 30px;
+}
+.mt20 .btn-danger {
+    background: -webkit-linear-gradient(left,#ff9000,#ff5000) no-repeat;
+}
