@@ -16,14 +16,15 @@
     <link href="font/css/base.css" rel="stylesheet" />
     <link href="css/public.css" rel="stylesheet" />
     <!--滚动图片样式-->
-    <link href="css/owl.carousel.css" rel="stylesheet" />
+    <link href="css/scrollPublic.css" rel="stylesheet" />
+    <link href="css/swiper.min.css" rel="stylesheet" />
     <!--本页面样式-->
     <link href="css/One.css" rel="stylesheet" />
-    <script src="scripts/jquery-1.10.2.js"></script>
     <!--字体图标-->
     <script src="scripts/bootstrap.min.js"></script>
     <!--滚动广告-->
-    <script src="scripts/owl.carousel.min.js"></script>
+    <script src="scripts/swiper.min.js"></script>
+    <script src="scripts/scroll.js"></script>
     <!--文字上下滚动-->
     <script src="scripts/txtscroll.js"></script>
     <!--倒计时-->
@@ -41,12 +42,19 @@
         <a href="javascript:;"><i class="fa fa-home"></i></a>
     </nav>
     <header>
-        <div class="m_banner" id="owl">
-            <a href="#" class="item"><img src="images/10250290397.png"></a>
-            <a href="#" class="item"><img src="images/10225357963.jpg"></a>
-            <a href="#" class="item"><img src="images/10250290397.png"></a>
-            <a href="#" class="item"><img src="images/10225357963.jpg"></a>
-        </div>
+        <!-- Swiper -->
+        <section class="pc-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-center none-effect"><a href="#"><img src="images/10225357963.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/10250290397.png"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/10225357963.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/10250290397.png"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/10225357963.jpg"></a></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
     </header>
     <!--内容-->
     <div class="contBox">
