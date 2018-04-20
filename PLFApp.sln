@@ -8,11 +8,13 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Android = Debug|Android
+		Debug|Any CPU = Debug|Any CPU
 		Debug|iOS = Debug|iOS
 		Debug|Windows-ARM = Debug|Windows-ARM
 		Debug|Windows-x64 = Debug|Windows-x64
 		Debug|Windows-x86 = Debug|Windows-x86
 		Release|Android = Release|Android
+		Release|Any CPU = Release|Any CPU
 		Release|iOS = Release|iOS
 		Release|Windows-ARM = Release|Windows-ARM
 		Release|Windows-x64 = Release|Windows-x64
@@ -22,6 +24,7 @@ Global
 		{89B4143B-6936-4DCF-8B40-7DF4BFD439AD}.Debug|Android.ActiveCfg = Debug|Android
 		{89B4143B-6936-4DCF-8B40-7DF4BFD439AD}.Debug|Android.Build.0 = Debug|Android
 		{89B4143B-6936-4DCF-8B40-7DF4BFD439AD}.Debug|Android.Deploy.0 = Debug|Android
+		{89B4143B-6936-4DCF-8B40-7DF4BFD439AD}.Debug|Any CPU.ActiveCfg = Debug|Android
 		{89B4143B-6936-4DCF-8B40-7DF4BFD439AD}.Debug|iOS.ActiveCfg = Debug|iOS
 		{89B4143B-6936-4DCF-8B40-7DF4BFD439AD}.Debug|iOS.Build.0 = Debug|iOS
 		{89B4143B-6936-4DCF-8B40-7DF4BFD439AD}.Debug|iOS.Deploy.0 = Debug|iOS
@@ -37,6 +40,7 @@ Global
 		{89B4143B-6936-4DCF-8B40-7DF4BFD439AD}.Release|Android.ActiveCfg = Release|Android
 		{89B4143B-6936-4DCF-8B40-7DF4BFD439AD}.Release|Android.Build.0 = Release|Android
 		{89B4143B-6936-4DCF-8B40-7DF4BFD439AD}.Release|Android.Deploy.0 = Release|Android
+		{89B4143B-6936-4DCF-8B40-7DF4BFD439AD}.Release|Any CPU.ActiveCfg = Release|Android
 		{89B4143B-6936-4DCF-8B40-7DF4BFD439AD}.Release|iOS.ActiveCfg = Release|iOS
 		{89B4143B-6936-4DCF-8B40-7DF4BFD439AD}.Release|iOS.Build.0 = Release|iOS
 		{89B4143B-6936-4DCF-8B40-7DF4BFD439AD}.Release|iOS.Deploy.0 = Release|iOS
