@@ -16,29 +16,35 @@
     <!--滚动图片样式-->
     <link href="css/owl.carousel.css" rel="stylesheet" />
     <link href="css/detail.css" rel="stylesheet" />
-    <script src="scripts/jquery-1.10.2.js"></script>
-    <!--滚动广告-->
-    <script src="scripts/owl.carousel.min.js"></script>
     <!--字体图标-->
     <script src="scripts/bootstrap.min.js"></script>
-    <!--返顶-->
-    <script src="scripts/Gotop.js"></script>
+    <!--返顶+滚动广告-->
+    <script src="scripts/swiper.min.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <!--本页代码-->
     <script src="scripts/detail.js"></script>
 </head>
 <body>
+    <!--头部-->
+    <div class="HeadTop">
+        <div class="Goback abs-t mt10"><a href="One.html"><i class="fa fa-chevron-left"></i></a></div>
+        <div class="shopCar abs-t mt10"><a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i></a></div>
+    </div>
     <header>
-        <!--头部-->
-        <div class="HeadTop">
-            <div class="Goback abs-t mt10"><a href="One.html"><i class="fa fa-chevron-left"></i></a></div>
-            <div class="shopCar abs-t mt10"><a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i></a></div>
-        </div>
         <!--滚动图-->
-        <div class="m_banner" id="owl">
-            <a href="#" class="item"><img src="images/shiyan2.jpg"></a>
-            <a href="#" class="item"><img src="images/shiyan1.jpg"></a>
-            <a href="#" class="item"><img src="images/shiyan1.jpg"></a>
-            <a href="#" class="item"><img src="images/shiyan2.jpg"></a>
-        </div>
+        <!-- Swiper -->
+        <section class="pc-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-center none-effect"><a href="#"><img src="images/10225357963.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/10250290397.png"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/10225357963.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/10250290397.png"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/10225357963.jpg"></a></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
     </header>
     <!--内容-->
     <div class="contBox">
@@ -165,7 +171,7 @@
         </table>
     </div>
     <!--返顶-->
-    <div class="gotop backtop" style="display:none;"><i class="fa fa-arrow-circle-up"></i></div>
+    <div class="gotop backtop" id="GoTop" style="display:none;"><i class="fa fa-arrow-circle-up"></i></div>
     <!--弹出-->
     <div class="PopBac pf none"></div>
     <!--服务说明-->
@@ -270,8 +276,8 @@
             </ul>
         </div>
         <div class="cpBtm pf">
-            <input type="button" value="加入购物车" class="abs-t" style="background: #f59e18;"/>
-            <input type="button" value="立即购买" class="abs-r"/>
+            <input type="button" value="加入购物车" class="abs-t" style="background: #f59e18;" />
+            <input type="button" value="立即购买" class="abs-r" />
         </div>
     </div>
     <!--评价移动隐藏框-->

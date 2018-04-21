@@ -22,15 +22,11 @@
     <link href="css/One.css" rel="stylesheet" />
     <!--字体图标-->
     <script src="scripts/bootstrap.min.js"></script>
-    <!--滚动广告-->
+    <!--返顶+滚动广告-->
     <script src="scripts/swiper.min.js"></script>
     <script src="scripts/scroll.js"></script>
-    <!--文字上下滚动-->
-    <script src="scripts/txtscroll.js"></script>
     <!--倒计时-->
     <script src="scripts/timer.js"></script>
-    <!--返顶-->
-    <script src="scripts/Gotop.js"></script>
 </head>
 <body>
     <nav class="navbar fixed-top navbar-inverse OneNav pf">
@@ -42,6 +38,7 @@
         <a href="javascript:;"><i class="fa fa-home"></i></a>
     </nav>
     <header>
+        <!--滚动图-->
         <!-- Swiper -->
         <section class="pc-banner">
             <div class="swiper-container">
@@ -81,18 +78,18 @@
         </nav>
         <!--滚动播放全站公告-->
         <!--新闻滚动-->
-        <div class="panel mb10">
-            <h3 class="panelHead">
-                <img src="images/toutiao.png" />
-            </h3>
-            <div class="apple">
-                <ul>
-                    <li><a href="javascript:void(0)" target="_blank">美国换了新总统美国换了新总统美国换了新总统</a></li>
-                    <li><a href="javascript:void(0)" target="_blank">韩国总统因闺蜜执政辞职</a></li>
-                    <li><a href="javascript:void(0)" target="_blank">今年年假提前放</a></li>
-                    <li><a href="javascript:void(0)" target="_blank">XX高速公路一货车翻倒高速公路一货车翻倒</a></li>
-                    <li><a href="javascript:void(0)" target="_blank">我是第五条新闻</a></li>
-                </ul>
+        <div class="vueBox">
+            <div class="marquee mb10">
+                <div class="marquee_title p10">
+                    <img src="images/toutiao.png" />
+                </div>
+                <div class="marquee_box">
+                    <ul class="marquee_list" :class="{marquee_top:animate}">
+                        <li v-for="(item, index) in marqueeList">
+                            {{item.txt}}
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!--抢购-->
@@ -258,6 +255,10 @@
         </svg>
     </div>
     <!--返顶-->
-    <div class="gotop backtop" style="display:none;"><i class="fa fa-arrow-circle-up"></i></div>
+    <div class="gotop backtop" id="GoTop" style="display:none;"><i class="fa fa-arrow-circle-up"></i></div>
+
+    <!--文字上下滚动-->
+    <script src="scripts/vue.min.js"></script>
+    <script src="scripts/txtscroll.js"></script>
 </body>
 </html>
