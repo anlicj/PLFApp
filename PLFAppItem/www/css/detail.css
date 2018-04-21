@@ -55,12 +55,11 @@ a:hover{
     width:33.3%;
 }
 .SpendingPackage .spcont {
-    width:28%;
+    width:32%;
 }
 .SpendingPackage .spcont i{
     color:#ff5000;
-    font-size:1.2rem;
-    vertical-align:middle;
+    font-size:1.3rem;
 }
 .SpendingPackage .ps {
     right: 0;
@@ -263,6 +262,7 @@ a:hover{
     background: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
+    display:none;
 }
 /*服务说明弹出框*/
 .ServicePop {
@@ -272,6 +272,7 @@ a:hover{
     height: 80%;
     width: 100%;
     z-index: 10000;
+    display:none;
 }
 .SPHead .fa{
     color:#666;
@@ -453,3 +454,5 @@ a:hover{
         filter: alpha(opacity=0);
     }
 }
+/*css取代js*/
+/*花费套餐，点击弹出*/
