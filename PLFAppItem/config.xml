@@ -103,4 +103,7 @@
     <splash src="res/screens/windows/SplashScreen.scale-240.png" width="1152" height="1920" />
     <splash src="res/screens/windows/SplashScreenPhone.scale-240.png" width="1152" height="1920" />
   </platform>
+  <plugin name="cordova-plugin-device" spec="~2.0.2" />
+  <plugin name="cordova-plugin-advanced-http" spec="~1.11.1" />
+  <plugin name="cordova-plugin-file" spec="~6.0.1" />
 </widget>

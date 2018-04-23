@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-inline';connect-src http://localhost:56325;img-src http://localhost:56325;script-src 'self' 'unsafe-inline' 'unsafe-eval';object-src 'none';  media-src *">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body ng-app="mainApp">
+    <div ng-controller="scrollImageCtrl">
+        <a ng-repeat="image in scrollImages|orderBy:image.sortCode" href="{{image.imageUrl}}" title="{{image.imageTitle}}">
+            <img ng-src="{{serverUrl+image.imageSrc}}" />
+        </a>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/plf-core.js"></script>
+    <script type="text/javascript">
+        (function () {
+            "use strict";
+            document.addEventListener('deviceready', onDeviceReady.bind(this), false);
+            function onDeviceReady() {
+                
+            }
+            var app = angular.module("mainApp", []).controller("scrollImageCtrl", function ($scope, $http) {
+                extendsScope($scope);
+                $http.get($scope.serverUrl + "api/Home/GetTopScrollImage").then(function (response) {
+                    //var scrollImages = [];
+                    //angular.forEach(response.data, function (each) {
+                    //    each.imageSrc = websiteConfig.serverUrl + each.imageSrc;
+                    //    scrollImages.push(each);
+                    //});
+                    $scope.scrollImages = response.data;
+                }, function (response) {
+                    console.log(response);
+                });
+            });
+        })()
+        
+    </script>
+</body>
+</html>
