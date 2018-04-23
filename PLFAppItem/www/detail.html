@@ -14,31 +14,38 @@
     <link href="css/public.css" rel="stylesheet" />
     <link href="font/css/base.css" rel="stylesheet" />
     <!--滚动图片样式-->
-    <link href="css/owl.carousel.css" rel="stylesheet" />
+    <link href="css/swiper.min.css" rel="stylesheet" />
     <link href="css/detail.css" rel="stylesheet" />
-    <script src="scripts/jquery-1.10.2.js"></script>
-    <!--滚动广告-->
-    <script src="scripts/owl.carousel.min.js"></script>
+    <!--本页面样式-->
+    <link href="css/detail.css" rel="stylesheet" />
     <!--字体图标-->
     <script src="scripts/bootstrap.min.js"></script>
-    <!--返顶-->
-    <script src="scripts/Gotop.js"></script>
+    <!--返顶+滚动广告-->
+    <script src="scripts/swiper.min.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <!--本页代码-->
     <script src="scripts/detail.js"></script>
 </head>
 <body>
-    <header>
-        <!--头部-->
-        <div class="HeadTop">
-            <div class="Goback abs-t mt10"><a href="One.html"><i class="fa fa-chevron-left"></i></a></div>
-            <div class="shopCar abs-t mt10"><a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i></a></div>
-        </div>
+    <!--头部-->
+    <div class="HeadTop">
+        <div class="Goback abs-t mt10"><a href="One.html"><i class="fa fa-chevron-left"></i></a></div>
+        <div class="shopCar abs-t mt10"><a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i></a></div>
+    </div>
+    <header class="pr">
         <!--滚动图-->
-        <div class="m_banner" id="owl">
-            <a href="#" class="item"><img src="images/shiyan2.jpg"></a>
-            <a href="#" class="item"><img src="images/shiyan1.jpg"></a>
-            <a href="#" class="item"><img src="images/shiyan1.jpg"></a>
-            <a href="#" class="item"><img src="images/shiyan2.jpg"></a>
-        </div>
+        <!-- Swiper -->
+        <section class="pc-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-center none-effect"><a href="#"><img src="images/shiyan1.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/shiyan2.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/shiyan1.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/shiyan2.jpg"></a></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
     </header>
     <!--内容-->
     <div class="contBox">
@@ -56,10 +63,10 @@
         </div>
         <!--花费套餐-->
         <div class="SpendingPackage p10 pr mt10">
-            <p class="fl spcont"><i class="fa fa-check-circle-o mr5"></i>7天无理由</p>
-            <p class="fl spcont"><i class="fa fa-check-circle-o mr5"></i>12小时内发货</p>
-            <p class="fl spcont"><i class="fa fa-check-circle-o mr5"></i>蚂蚁花呗</p>
-            <a href="javascript:void(0);" class="ps mr10" id="SPBtn"><i class="fa fa-angle-right"></i></a>
+            <p class="fl spcont"><i class="fa fa-check-circle-o mr5 fl"></i>7天无理由</p>
+            <p class="fl spcont"><i class="fa fa-check-circle-o mr5 fl"></i>12小时内发货</p>
+            <p class="fl spcont"><i class="fa fa-check-circle-o mr5 fl"></i>蚂蚁花呗</p>
+            <span href="javascript:void(0);" class="ps mr10" id="SPBtn"><i class="fa fa-angle-right"></i></span>
         </div>
         <!--商品类型-->
         <div class="CommodityType p10 pr">
@@ -165,11 +172,11 @@
         </table>
     </div>
     <!--返顶-->
-    <div class="gotop backtop" style="display:none;"><i class="fa fa-arrow-circle-up"></i></div>
+    <div class="gotop backtop" id="GoTop" style="display:none;"><i class="fa fa-arrow-circle-up"></i></div>
     <!--弹出-->
-    <div class="PopBac pf none"></div>
+    <div class="PopBac pf"></div>
     <!--服务说明-->
-    <div class="ServicePop pf p10 none">
+    <div class="ServicePop pf p10">
         <h3 class="tc p10 SPHead">服务说明<i class="fa fa-times-circle fr PopClose"></i></h3>
         <ul>
             <li class="p10">
@@ -270,8 +277,8 @@
             </ul>
         </div>
         <div class="cpBtm pf">
-            <input type="button" value="加入购物车" class="abs-t" style="background: #f59e18;"/>
-            <input type="button" value="立即购买" class="abs-r"/>
+            <input type="button" value="加入购物车" class="abs-t" style="background: #f59e18;" />
+            <input type="button" value="立即购买" class="abs-r" />
         </div>
     </div>
     <!--评价移动隐藏框-->

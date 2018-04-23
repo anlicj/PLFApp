@@ -104,41 +104,48 @@ header {
     background-image: url(../images/tm5.png);
 }
 /*文字公告滚动*/
-.panel {
+.marquee {
     width: 100%;
-    overflow: hidden;
-    border-top: 1px solid #f3f3f3;
-    border-bottom: 1px solid #e0e0e0;
+    align-items: center;
+    color: #3A3A3A;
+    display: flex;
+    box-sizing: border-box;
+    background-color:#fff;
+    border-bottom:1px solid #eee;
+}
+.marquee_title {
+    align-items: center;
+}
+.marquee_title img {
+    height: 27px;
+}
+.marquee_box {
+    display: block;
     position: relative;
-}
-.apple {
-    width: 100%;
-    height: 45px;
-    background: #fff;
+    width: 60%;
+    height: 27px;
+    line-height:27px;
     overflow: hidden;
 }
-.apple ul li {
-    height: 45px;
-    line-height: 45px;
-    font-size: 14px;
+.marquee_list {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.apple ul li a {
-    color: #666;
-    display: block;
-    padding-left: 120px;
-    padding-right: 10px;
+.marquee_top {
+    transition: all 0.5s;
+    margin-top: -30px
 }
-.apple ul li a:hover {
-    color: #f05e54;
+.marquee_list li {
+    font-size: 14px;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 20px;
 }
-.panelHead{
-    position:absolute;
-    left:10px;
-    top:10px;
-}
-.panelHead img{
-    height:27px;
+.marquee_list li span {
+    padding: 0 2px;
 }
 /*中间内容*/
 .contBox .table .fa {

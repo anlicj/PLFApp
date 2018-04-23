@@ -17,10 +17,9 @@ function Timer(intSecond){
           if (hour <= 9) hour = '0' + hour;
           if (minute <= 9) minute = '0' + minute;
           if (second <= 9) second = '0' + second;
-          $('#J_Day').html(day);
-          $('#j_Hour').html(hour);
-          $('#J_Minute').html(minute);
-          $('#J_Second').html(second);
+          document.getElementById('j_Hour').innerHTML = hour;
+          document.getElementById('J_Minute').innerHTML = minute;
+          document.getElementById('J_Second').innerHTML = second;
           _this.second=intSecond--;
           if(intSecond == -2){
             alert("超时！");
