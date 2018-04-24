@@ -185,7 +185,7 @@ a, div, header, span {
     z-index: 9999;
     cursor: pointer;
     color: #999;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .search_input {
