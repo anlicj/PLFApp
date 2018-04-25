@@ -82,8 +82,8 @@ a:hover{
 .CommodityType i {
     right: 0;
     font-size: 2rem;
-    color:#999;
-    line-height: 2rem;
+    color: #999;
+    line-height: 1.5rem;
 }
 /*宝贝评价*/
 .bbEvaluation{
@@ -229,9 +229,9 @@ a:hover{
     border-right: 1px solid #f0f0f0;
     box-sizing: border-box;
 }
-.BtmBox .w60 a {
+.BtmBox .w60 span {
     font-size: 0.9rem;
-    color: #666;
+    color: #999;
     display: block;
 }
 .BtmBox .w60:first-child .fa {
@@ -239,17 +239,18 @@ a:hover{
 }
 .BtmBox .fa {
     font-size: 1.1rem;
-    color: #999;
 }
-.BtmBox .JrCar {
-    background: #f59e18;
-    color: #fff;
-    padding:15px 0px;
-}
-.BtmBox .LjBuy {
-    background: #ff5000;
+.BtmBox .JrCar, .BtmBox .LjBuy {
     color: #fff;
     padding: 15px 0px;
+    width: 100%;
+    border:0;
+}
+.BtmBox .JrCar {
+    background-color: #f59e18;
+}
+.BtmBox .LjBuy {
+    background-color: #ff5000;
 }
 .BtmBox .collCor {
     color: #ff5000;
@@ -262,7 +263,6 @@ a:hover{
     background: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
-    display:none;
 }
 /*服务说明弹出框*/
 .ServicePop {
@@ -272,7 +272,6 @@ a:hover{
     height: 80%;
     width: 100%;
     z-index: 10000;
-    display:none;
 }
 .SPHead .fa{
     color:#666;
@@ -370,6 +369,7 @@ a:hover{
     overflow-y:auto;
     top:0;
     left:100%;
+    transition:.3s;
 }
 .EvaluateBox h1{
     border-bottom:1px solid #ddd;
@@ -454,5 +454,3 @@ a:hover{
         filter: alpha(opacity=0);
     }
 }
-/*css取代js*/
-/*花费套餐，点击弹出*/

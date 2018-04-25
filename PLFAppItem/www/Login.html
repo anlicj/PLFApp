@@ -14,10 +14,8 @@
     <link href="font/css/base.css" rel="stylesheet" />
     <!--本页样式-->
     <link href="css/login.css" rel="stylesheet" />
-    <script src="scripts/jquery-1.10.2.js"></script>
-    <!--字体图标-->
-    <script src="scripts/bootstrap.min.js"></script>
     <!--本页js-->
+    <script src="cordova.js"></script>
     <script src="scripts/login.js"></script>
 </head>
 <body>
@@ -27,11 +25,11 @@
     <div class="LoginCont p30">
         <div class="loginInput p10 mt20">
             <input type="text" value="" class="userName" placeholder="手机号/邮箱/会员名" />
-            <i class="fa fa-times-circle fr mt5"></i>
+            <i class="fa fa-times-circle fr mt5 userClose"></i>
         </div>
         <div class="loginInput p10 mt20">
             <input type="password" value="" class="userPwd" placeholder="输入密码" />
-            <i class="fa fa-times-circle fr mt5"></i>
+            <i class="fa fa-times-circle fr mt5 userClose"></i>
         </div>
         <div class="mt20">
             <a href="#">免费注册</a>
