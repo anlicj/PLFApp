@@ -61,6 +61,9 @@ a{
     text-decoration:none;
     -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
+a:hover{
+    text-decoration:none;
+}
 /*文字排版*/
 .f12 {
     font-size: 12px

@@ -5,12 +5,12 @@
         //编辑
         document.getElementsByClassName("shopTBtn")[0].addEventListener("click", EditButton);
         //单选
-        //document.getElementsByClassName("alonecheck")[0].addEventListener("click", AloneCheck);
+        document.getElementsByClassName("alonecheck")[0].addEventListener("click", AloneCheck);
         //多选
         //全选
         //加减
     }
-    //编辑
+    //编辑 
     function EditButton() {
         var shopBtn = document.getElementsByClassName("shopTBtn");
         var tab = document.getElementsByClassName("ShopbundleTab");
@@ -49,15 +49,15 @@
         } 
     }
     //单选
-    //function AloneCheck() {
-    //    var checkTD = document.getElementsByClassName("checkTD");
-    //    for (var i = 0; i < checkTD.length; i++) {
-    //        var alonecheck = checkTD[i].getElementsByClassName("alonecheck");
-    //        for (var j = 0; j < alonecheck.length; j++) {
-    //            alonecheck[j].checked = true;
-    //        }
-    //    }
-    //}
+    function AloneCheck() {
+        var checkTD = document.getElementsByClassName("checkTD");
+        for (var i = 0; i < checkTD.length; i++) {
+            var alonecheck = checkTD[i].getElementsByClassName("alonecheck");
+            for (var j = 0; j < alonecheck.length; j++) {
+                alonecheck[j].checked = true;
+            }
+        }
+    }
     //多选
     //全选
     //加减
