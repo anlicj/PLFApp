@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-inline';script-src 'self' 'unsafe-inline' 'unsafe-eval';object-src 'none';  media-src *">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>请求出错了</title>
+    <script src="scripts/angular.js"></script>
+</head>
+<body ng-app="mainApp">
+    <content ng-controller="showCtrl">
+        <div>
+            <h1>{{errorInfo}}</h1>
+        </div>
+        <div>
+            <a href="javascript:;" ng-click="goToHome(0);">重新加载</a>
+            <a href="javascript:;" ng-click="goToHome(1);">返回首页</a>
+        </div>
+    </content>
+
+    <script type="text/javascript">
+        angular.module('mainApp', []).config(function ($locationProvider) {
+            $locationProvider.html5Mode({
+                enabled: true,
+                requireBase: false//必须配置为false，否则<base href=''>这种格式带base链接的地址才能解析
+            });
+        }).controller('showCtrl', function ($scope, $location) {
+            var search = $location.search();
+            var errorInfo = search.errorInfo || "请求出错了";
+            $scope.errorInfo = errorInfo;
+            $scope.homeUrl = $location.protocol() + "://" + location.host + "/index.html";
+            $scope.returnUrl = search.returnUrl || $scope.homeUrl;
+            $scope.goToHome = function (type) {
+                if (type===0) {
+                    location.replace($scope.returnUrl);
+                } else if (type===1) {
+                    location.replace($scope.homeUrl);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

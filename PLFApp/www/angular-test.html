@@ -11,29 +11,28 @@
             <img ng-src="{{serverUrl+image.imageSrc}}" />
         </a>
     </div>
+    <div ng-controller="actionCtrl">
+        <button value="增加重连次数" ng-click="addRec()"></button>
+    </div>
     <script src="cordova.js"></script>
     <script src="scripts/angular.js"></script>
-    <script src="scripts/plf-core.js"></script>
+    <script src="scripts/app-common.js"></script>
     <script type="text/javascript">
         (function () {
             "use strict";
             document.addEventListener('deviceready', onDeviceReady.bind(this), false);
-            function onDeviceReady() {
-                
-            }
-            var app = angular.module("mainApp", []).controller("scrollImageCtrl", function ($scope, $http) {
-                extendsScope($scope);
+            var app = angular.module("mainApp", ['app-common']).controller("scrollImageCtrl", function ($scope, $http, webConfig) {
+                $scope.serverUrl = webConfig.serverUrl;
                 $http.get($scope.serverUrl + "api/Home/GetTopScrollImage").then(function (response) {
-                    //var scrollImages = [];
-                    //angular.forEach(response.data, function (each) {
-                    //    each.imageSrc = websiteConfig.serverUrl + each.imageSrc;
-                    //    scrollImages.push(each);
-                    //});
                     $scope.scrollImages = response.data;
                 }, function (response) {
                     console.log(response);
                 });
             });
+            function onDeviceReady() {
+                
+            }
+            
         })()
         
     </script>

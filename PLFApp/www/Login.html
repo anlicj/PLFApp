@@ -17,6 +17,7 @@
     <!--本页js-->
     <script src="cordova.js"></script>
     <script src="scripts/angular.js"></script>
+    <script src="scripts/app-common.js"></script>
     <script src="scripts/login.js"></script>
 </head>
 <body ng-app="mainApp">
@@ -51,8 +52,20 @@
         </div>
     </div>
     <script type="text/javascript">
-        var mainApp = angular.module("mainApp", []);
-        mainApp.controller("loginCtrl", function ($scope, $http) {
+        angular.module("mainApp", ['app-common']).config(function ($locationProvider) {
+            $locationProvider.html5Mode({
+                enabled: true,
+                requireBase: false//必须配置为false，否则<base href=''>这种格式带base链接的地址才能解析
+            });
+        }).controller("loginCtrl", function ($scope, $http, webConfig, $authHttp, $location) {
+            var returnUrl = $location.protocol() + "://" + location.host + "/index.html";
+            var urlParam = $location.search().returnUrl;
+            if (urlParam) {
+                urlParam = decodeURIComponent(urlParam);
+                if (urlParam.indexOf('/') == 0) {
+                    returnUrl = urlParam;
+                }
+            }
             $scope.login = function () {
                 var _mobilePhone = $scope.mobilePhone;
                 var _password = $scope.password;
@@ -64,14 +77,13 @@
                     alert("请输入密码!");
                     return;
                 }
-                var _data= {
+                var _data = {
                     MobilePhone: _mobilePhone,
                     Password: _password
                 };
                 $http({
-                    method:"POST",
-                    url: "http://localhost:56325/api/Member",
-                    //url: "https://www.baidu.com",
+                    method: "POST",
+                    url: "http://localhost:56325/api/Member/Login",
                     data: _data
                 }).then(function (response) {
                     console.log(response);
@@ -85,22 +97,11 @@
                         alert("授权失败");
                         return;
                     }
-                    sessionDb.setItem("access_token", dataObj.access_token);
-                    sessionDb.setItem("refresh_token", dataObj.profile.refresh_token);
-                    sessionDb.setItem("auth_time", dataObj.profile.auth_time);
-                    sessionDb.setItem("expires_at", dataObj.profile.expires_at);
-                    alert("授权成功");
-                    $http({
-                        method:"get",
-                        url: "http://localhost:56325/api/Goods",
-                        headers: {
-                            "Authorization": "Bearer "+sessionDb.getItem("access_token")
-                        }
-                    }).then(function (res) {
-                        console.log(res);
-                    }, function (res) {
-                        alert("未授权");
-                        });
+                    sessionDb.setItem(webConfig.accessTokenKey, dataObj.access_token);
+                    sessionDb.setItem(webConfig.refreshTokenKey, dataObj.profile.refresh_token);
+                    sessionDb.setItem(webConfig.authTimeKey, dataObj.profile.auth_time);
+                    sessionDb.setItem(webConfig.expiresAtKey, dataObj.profile.expires_at);
+                    location.replace(returnUrl);
                 },
                     function (response) {
                         alert("操作失败");
