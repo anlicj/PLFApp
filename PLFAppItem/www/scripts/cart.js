@@ -1,60 +1,77 @@
-﻿$(function () {
+﻿(function () {
+    'use strict'
+    document.addEventListener('deviceready', onDeviceReady.bind(this), false);
+    function onDeviceReady() {
+        //编辑
+        document.getElementsByClassName("shopTBtn")[0].addEventListener("click", EditButton);
+        //单选
+        //document.getElementsByClassName("alonecheck")[0].addEventListener("click", AloneCheck);
+        //多选
+        //全选
+        //加减
+    }
     //编辑
-    $(".shopTBtn").click(function () {
-        var val = $(this).val();
-        if (val == "编辑") {
-            $(this).val("完成");
-            $(this).parents("div.ShopTitle").next().find(".shopInfor").addClass("none").next().removeClass("none");
-        } else {
-            $(this).val("编辑");
-            $(this).parents("div.ShopTitle").next().find(".shopInforEdit").addClass("none").prev().removeClass("none");
-        }
-    })
-    //加减
-    //TwoEdit Minus NumTxt Plus
-    $(".TwoEdit .Minus").click(function () {
-        var val = $(this).next().val();
-        var NumTxtNum = parseInt(val);
-        var Minus = NumTxtNum - 1;
-        if (NumTxtNum > 1) {
-            NumTxtNum < 1 ? $(this).next().val(1) : $(this).next().val(Minus);
-        }
-    })
-    $(".TwoEdit .Plus").click(function () {
-        var val = $(this).prev().val();
-        var NumTxtNum = parseInt(val);
-        var Plus = NumTxtNum + 1;
-        $(this).prev().val(Plus);
-    })
-    //checkbox选择
+    function EditButton() {
+        var shopBtn = document.getElementsByClassName("shopTBtn");
+        var tab = document.getElementsByClassName("ShopbundleTab");
+        for (var i = 0; i < shopBtn.length; i++) {
+            if (shopBtn[i].value == "编辑") {
+                shopBtn[i].value = "完成";
+                for (var j = 0; j < tab.length; j++) {
+                    var tr = tab[j].getElementsByClassName("ShopbundleTr");
+                    for (var m = 0; m < tr.length; m++) {
+                        var shopInfor = tr[m].getElementsByClassName("shopInfor");
+                        var shopInforEdit = tr[m].getElementsByClassName("shopInforEdit");
+                        for (var n = 0; n < shopInfor.length; n++) {
+                            shopInfor[n].className = "shopInfor none";
+                        }
+                        for (var n = 0; n < shopInforEdit.length; n++) {
+                            shopInforEdit[n].className = "shopInforEdit pr";
+                        }
+                    }
+                }
+            } else {
+                shopBtn[i].value = "编辑";
+                for (var j = 0; j < tab.length; j++) {
+                    var tr = tab[j].getElementsByClassName("ShopbundleTr");
+                    for (var m = 0; m < tr.length; m++) {
+                        var shopInfor = tr[m].getElementsByClassName("shopInfor");
+                        var shopInforEdit = tr[m].getElementsByClassName("shopInforEdit");
+                        for (var n = 0; n < shopInfor.length; n++) {
+                            shopInfor[n].className = "shopInfor";
+                        }
+                        for (var n = 0; n < shopInforEdit.length; n++) {
+                            shopInforEdit[n].className = "shopInforEdit pr none";
+                        }
+                    }
+                }
+            }
+        } 
+    }
     //单选
-    $(".checkTD").click(function () {
-        if (!$(this).find("i").hasClass("icon")) {
-            $(this).find("i").addClass("icon").next().prop("checked", true);
-        } else {
-            $(this).find("i").removeClass("icon").next().prop("checked", false);
-        }
-    })
-    //店铺多选
-    $(".ShopTitle .fa-check-square-o").click(function () {
-        var ThisFind = $(this).parents("div.ShopTitle").next().find(".checkTD");
-        if (!$(this).hasClass("icon")) {
-            $(this).addClass("icon").next("input[type=checkbox]").prop("checked", true);
-            ThisFind.children("i.fa").addClass("icon").next().prop("checked", true);
-        } else {
-            $(this).removeClass("icon").next("input[type=checkbox]").prop("checked", false);
-            ThisFind.children("i.fa").removeClass("icon").next().prop("checked", false);
-        }
-    })
+    //function AloneCheck() {
+    //    var checkTD = document.getElementsByClassName("checkTD");
+    //    for (var i = 0; i < checkTD.length; i++) {
+    //        var alonecheck = checkTD[i].getElementsByClassName("alonecheck");
+    //        for (var j = 0; j < alonecheck.length; j++) {
+    //            alonecheck[j].checked = true;
+    //        }
+    //    }
+    //}
+    //多选
     //全选
-    $(".BtmBoxTab .checkBox").click(function () {
-        if (!$(this).find("i.fa").hasClass("icon")) {
-            $(this).find("i.fa").addClass("icon").next("input[type=checkbox]").prop("checked", true);
-            $(".CartCont").find(".fa-check-square-o").addClass("icon").next("input[type=checkbox]").prop("checked", true);
-        } else {
-            $(this).find("i.fa").removeClass("icon").next("input[type=checkbox]").prop("checked", false);
-            $(".CartCont").find(".fa-check-square-o").removeClass("icon").next("input[type=checkbox]").prop("checked", false);
-        }
-    })
-    //end
-})
+    //加减
+    //function Arithmetic() {
+    //    var CartShopList = document.getElementById('CartShopList');//全部内容
+    //    var Shopbundle = CartShopList.getElementsByClassName('Shopbundle');//全部内容->商店表单
+    //    for (var i = 0; i < Shopbundle.length; i++) {
+    //        var ShopbundleTr = Shopbundle[i].getElementsByClassName('ShopbundleTr');//全部内容->商店表单->tr单个商品内容
+    //        for (var j = 0; j < ShopbundleTr.length; j++) {
+    //            var Minus = ShopbundleTr[j].getElementsByClassName('Minus');
+    //            var NumTxt = parseInt(ShopbundleTr[j].getElementsByClassName('NumTxt')[0].value);
+    //            var Plus = ShopbundleTr[j].getElementsByClassName('Plus');
+
+    //        }
+    //    }
+    //}
+})()
