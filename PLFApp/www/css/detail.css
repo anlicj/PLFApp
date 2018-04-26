@@ -1,0 +1,456 @@
+﻿body{
+    background:#fff;
+}
+a:hover{
+    text-decoration:none;
+}
+/*头部*/
+.HeadTop {
+    position: relative;
+    z-index: 999;
+}
+.Goback {
+    left: 10px;
+}
+.shopCar {
+    right: 10px;
+}
+.Goback a, .shopCar a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.36);
+    color: #fff;
+    border-radius:100%;
+    line-height:40px;
+    text-align:center;
+    font-size:1.2rem;
+}
+/*contBox*/
+.titleHead {
+    color: #222;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+.priceBox{
+    padding:0px 10px;
+}
+.priceBox span {
+    color: #ff5000;
+    font-size: 1.8rem;
+}
+.priceBox .dt{
+    font-size:0.8rem;
+    padding:2px 3px;
+    border-radius:5px;
+    border:1px solid #ff5000;
+}
+/*快递信息,花费套餐*/
+.expInfortab, .SpendingPackage {
+    overflow: hidden;
+    color: #888;
+    font-size: 0.8rem;
+}
+.expInfortab .tabcont {
+    width:33.3%;
+}
+.SpendingPackage .spcont {
+    width:32%;
+}
+.SpendingPackage .spcont i{
+    color:#ff5000;
+    font-size:1.3rem;
+}
+.SpendingPackage .ps {
+    right: 0;
+    top: 0;
+    color: #999;
+    font-size: 2rem;
+}
+.SpendingPackage .ps, .SpendingPackage .ps i {
+    line-height: 2rem;
+}
+/*商品类型*/
+.CommodityType {
+    border-bottom: 10px solid #eee;
+    border-top: 10px solid #eee;
+}
+.CommodityType a{
+    color:#666;
+    font-size:1.2rem;
+}
+.CommodityType i {
+    right: 0;
+    font-size: 2rem;
+    color: #999;
+    line-height: 1.5rem;
+}
+/*宝贝评价*/
+.bbEvaluation{
+    border-bottom:1px solid #e9e9e9;
+}
+.bbEvaluation .EvaHead {
+    border-bottom: 1px dashed #f0f0f0;
+    font-size: 1rem;
+    color: #666;
+}
+.bbEvaluation .userImg {
+    border-radius: 100%;
+}
+.bbEvaluation .EvaCont {
+    text-indent: 2rem;
+    color: #333;
+    font-size: 0.9rem;
+    line-height:1.2rem;
+    height: 2.4rem;
+    padding: 0px 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.bbEvaluation .btn{
+    margin:10px 0px;
+}
+/*店铺信息*/
+.shopInfor{
+    overflow:hidden;
+}
+.shopInfor .shopHead a {
+    color: #333;
+    font-size: 1rem;
+}
+.shopInfor .shopHead img {
+    vertical-align: text-top;
+}
+.shopInforBox{
+    width:50%;
+    text-align:center;
+    box-sizing:border-box;
+}
+/*幻灯片导航*/
+.SlideNav {
+    border-bottom: 10px solid #eee;
+    border-top: 10px solid #eee;
+}
+.SlideNav .table{
+    margin:0;
+}
+.SlideNav .active {
+    border-bottom:2px solid #ff5000;
+    color:#ff5000;
+}
+/*幻灯片内容*/
+.SlideCont{
+    margin-bottom:70px;
+}
+.TxtImgInfor img{
+    max-width:100%;
+}
+.ProductPars th{
+    min-width:120px;
+    max-width:200px;
+    color:#999;
+    font-size:0.9rem;
+}
+.ProductPars td {
+    font-size: 0.9rem;
+}
+.StoreRecomdt{
+    background:#f5f5f5;
+}
+.StoreRecomdtList {
+    overflow: hidden;
+    padding: 2px;
+}
+
+.StoreRecomdtList li {
+    padding: 2px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.StoreRecomdtList li a {
+    display: block;
+    background-color: #fff;
+}
+
+.StoreRecomdtList .guessCont {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.2rem;
+    height: 2.4rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.Pricetxt {
+    color: red;
+}
+.srTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: 0 .373333rem;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#ddd),to(#ddd));
+    background-image: -webkit-linear-gradient(top,#ddd,#ddd); 
+    background-image: linear-gradient(180deg,#ddd,#ddd); 
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.srTitle span {
+    padding: 0 .32rem;
+    background: #f5f5f5;
+}
+/*底部*/
+.BtmBox{
+    bottom:0;
+    left:0;
+    width:100%;
+    background:#fff;
+}
+.BtmBox .table {
+    margin: 0;
+}
+.BtmBox th{
+    padding:0;
+}
+.BtmBox .w60 {
+    border-right: 1px solid #f0f0f0;
+    box-sizing: border-box;
+}
+.BtmBox .w60 span {
+    font-size: 0.9rem;
+    color: #999;
+    display: block;
+}
+.BtmBox .w60:first-child .fa {
+    color:#00ceff;
+}
+.BtmBox .fa {
+    font-size: 1.1rem;
+}
+.BtmBox .JrCar, .BtmBox .LjBuy {
+    color: #fff;
+    padding: 15px 0px;
+    width: 100%;
+    border:0;
+}
+.BtmBox .JrCar {
+    background-color: #f59e18;
+}
+.BtmBox .LjBuy {
+    background-color: #ff5000;
+}
+.BtmBox .collCor {
+    color: #ff5000;
+}
+/*弹出*/
+.PopBac {
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+/*服务说明弹出框*/
+.ServicePop {
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    height: 80%;
+    width: 100%;
+    z-index: 10000;
+}
+.SPHead .fa{
+    color:#666;
+    font-size:1.5rem;
+}
+.ServicePop li{
+    border-bottom:1px solid #eee;
+}
+.ServicePop li .fa{
+    color:#ff5000;
+    font-size:2rem;
+}
+.ServicePop .media-body p {
+    color:#999;
+    font-size:0.8rem;
+}
+.ServicePop .SerConfirm {
+    background: #ff5000;
+    color: #fff;
+    border-radius:4px;
+    bottom:0;
+    width:100%;
+    left:0;
+}
+/*商品类型*/
+.CommodityPop {
+    position: relative;
+    z-index: 10000;
+}
+.CommodityPop .cpTop {
+    height: 20%;
+    width: 100%;
+    bottom: 70%;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+    border-bottom: 1px solid #e6e6e6;
+}
+.CommodityPop .cpTop .cpShopImg {
+    margin-top: -40px;
+    background-color:#fff;
+    box-shadow:0px 0px 5px 0px #fff;
+    border-radius:4px;
+}
+.CommodityPop .cpTop .mt-0 {
+    color: #ff5000;
+}
+.cpTop .media .fa {
+    color: #999;
+    font-size: 2rem;
+    margin-top: -20px;
+}
+.CommodityPop .cpCont {
+    height: 62%;
+    width: 100%;
+    bottom: 8%;
+    left: 0;
+    background-color: #fff;
+    overflow-y: auto;
+}
+.CommodityPop .cpCont ul{
+    overflow:hidden;
+}
+.CommodityPop .cpCont li {
+    float: left;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    background: #ececec;
+    border-radius: .16rem;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    margin: 4px;
+}
+.CommodityPop .cpBtm {
+    height:8%;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+.CommodityPop .cpBtm input {
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    background: #ff5000;
+    border-width: 0;
+}
+/*评价移动隐藏框*/
+.EvaluateBox{
+    width:100%;
+    height:100%;
+    background-color:#fff;
+    z-index:10000;
+    overflow-y:auto;
+    top:0;
+    left:100%;
+    transition:.3s;
+}
+.EvaluateBox h1{
+    border-bottom:1px solid #ddd;
+}
+.EbClass .RatesTag {
+    color: #333;
+    background-color: #ffe3e3;
+    border-radius: 4px;
+    border-width: 0;
+}
+.EvaluateBox .EbClass .Cur {
+    background-color: #ff5000;
+    color:#fff;
+}
+.EvaluateBox .EbCont li {
+    border-top: 1px solid #eee;
+}
+.EvaluateBox .userImg{
+    border-radius:100%;
+}
+.EvaluateBox .EvaCont {
+    text-indent: 2rem;
+}
+.EvaluateBox .DateTxt {
+    color:#999;
+    font-size:0.8rem;
+}
+/*分页*/
+.pagingBox {
+    text-align: center;
+    border-top:1px solid #ddd;
+}
+.pagingBox div{
+    display:inline-block;
+    min-width:20%;
+    text-align:center;
+    padding:10px 0px;
+}
+/*店铺收藏显示的文字*/
+#CollTxt {
+    width: 100px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.42);
+    bottom: 10%;
+    left: 50%;
+    margin-left: -50px;
+    font-size: 0.9rem;
+    z-index: 1;
+    text-align: center;
+    padding: 5px 0px;
+    border-radius: 5px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.ctBox {
+    animation: name1;
+    animation-duration: 2s;
+    /* Safari and Chrome */
+    -webkit-animation: name1;
+    -webkit-animation-duration: 2s;
+}
+@keyframes name1 {
+    0% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    100% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}
+
+@-webkit-keyframes name1 /* Safari and Chrome */
+{
+    0% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+    100% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}

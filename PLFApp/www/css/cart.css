@@ -1,0 +1,186 @@
+﻿/*头部*/
+.headBox{
+    border-bottom:1px solid #eee;
+    background-color:#fff;
+    font-size:1.1rem;
+}
+.headBox a {
+    color: #666;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+/*物品列表*/
+.CartCont{
+    margin-bottom:70px;
+}
+.ShopTitle{
+    background-color:#fff;
+    padding:10px 0px;
+}
+.ShopTitle .fa-check-square-o, .shopCont .fa-check-square-o {
+    color: #bbb;
+    font-size: 1.3rem;
+    vertical-align: middle;
+}
+.Shopbundle .ShopTitle .icon {
+    color: #ff6a00;
+}
+.ShopTitle a {
+    color: #333;
+}
+.ShopTitle .fa-angle-right {
+    font-size: 1.5rem;
+    vertical-align: top;
+}
+.shopTBtn {
+    background-color: transparent;
+    border: 0;
+    color: #666;
+    font-size: 0.9rem;
+    top: 0;
+    margin-top: 12px;
+}
+.shopTBtn:focus{
+    outline:none;
+}
+.shopCont {
+    background-color: #e9e9e9;
+    border-bottom: 1px solid #fff;
+}
+.shopTab{
+    width:100%;
+}
+.shopTab td {
+    border-bottom: 1px solid #fff;
+    padding: 5px 0px;
+}
+.shopTab .checkTD .icon {
+    color: #ff6a00;
+}
+.shopInfor {
+    padding: 0px 5px;
+}
+.shopName {
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -moz-line-clamp: 2;
+    -ms-line-clamp: 2;
+    -o-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+    box-orient: vertical;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    display: box;
+    word-break: break-all;
+    height: 2.6rem;
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+.tcShop, .shopTab del {
+    color: #999;
+    font-size: 0.8rem;
+}
+.tcRed{
+    color:red;
+}
+/*数量和套餐编辑*/
+.shopInforEdit{
+    overflow:hidden;
+}
+.TwoEdit {
+    width: 80%;
+    padding:10px 20px;
+}
+.EditBtn, .EditBtn .abs-r {
+    width: 20%;
+}
+.EditBtn button{
+    background-color:#ff6a00;
+    color:#fff;
+    font-size:0.9rem;
+    width:100%;
+    height:100%;
+    border:0;
+}
+.TwoEdit .NumEdit {
+    overflow: hidden;
+}
+button:focus{
+    outline:none;
+}
+.NumEdit .NumTxt {
+    border: 0;
+    background-color: transparent;
+    width: 40%;
+}
+.NumEdit i{
+    width:20%;
+    color:#888;
+}
+.NumEdit i, .NumEdit .NumTxt {
+    line-height: 2rem;
+}
+.PackEdit .packTxt {
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -moz-line-clamp: 2;
+    -ms-line-clamp: 2;
+    -o-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+    box-orient: vertical;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    display: box;
+    word-break: break-all;
+    font-size: 0.9rem;
+    color: #666;
+    width: 95%;
+}
+
+/*底部fixed*/
+.BtmBox {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    z-index: 1;
+}
+.BtmBox .BtmBoxTab {
+    width:100%;
+}
+.BtmBox box {
+    box-sizing: border-box;
+}
+.checkBox .fa {
+    color:#bbb;
+}
+.BtmBox .checkBox .icon {
+    color: #ff6a00;
+}
+.BtmBoxTab .checked .fa {
+    color: #ff6a00;
+}
+.BtmBoxTab .Total span {
+    color: #ff6a00;
+}
+.Settlement input {
+    background: #ff6a00;
+    color: #fff;
+    border: 0;
+    width: 100%;
+    padding: 15px 0px;
+}

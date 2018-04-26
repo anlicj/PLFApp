@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>个人中心</title>
+    <!--字体图标-->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="font/css/font-awesome.min.css" rel="stylesheet" />
+    <!--默认公共样式-->
+    <link href="font/css/base.css" rel="stylesheet" />
+    <!--本页样式-->
+    <link href="css/user.css" rel="stylesheet" />
+    <!--angularJs测试-->
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/jquery-1.10.2.js"></script>
+    <!--字体图标-->
+    <script src="scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="pr">
+        <img src="images/userImg.jpg" class="ps w80 h80 userImg" /> 
+        <div class="headTop">
+            <p class="Setup tr p10"><a href="#">设置</a></p>
+            <p class="userName pb10">放开那个未来</p>
+        </div>
+        <div class="headCont p5">
+            <div class="dib tc mr15">
+                <a href="#">
+                    <p>11</p>
+                    <p>收藏的宝贝</p>
+                </a>
+            </div>
+            <div class="dib tc mr15">
+                <a href="#">
+                    <p>3</p>
+                    <p>收藏的店铺</p>
+                </a>
+            </div>
+            <div class="dib tc">
+                <a href="#">
+                    <p>121</p>
+                    <p>我的足迹</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="ContBox">
+        <div class="mt20 OrderAct">
+            <ul>
+                <li class="fl tc p5 pr"><a href="#"><i class="fa fa-money block mb5 mt5"></i>待付款<span class="ps spanIcon tc w20 mt5 none"><em>1</em><i class="abs-r w20 h20"></i></span></a></li>
+                <li class="fl tc p5 pr"><a href="#"><i class="fa fa-file-image-o block mb5 mt5"></i>待发货<span class="ps spanIcon tc w20 mt5 none"><i class="abs-r w20 h20"></i><em>1</em></span></a></li>
+                <li class="fl tc p5 pr"><a href="#"><i class="fa fa-steam-square block mb5 mt5"></i>待收货<span class="ps spanIcon tc w20 mt5 none"><i class="abs-r w20 h20"></i><em>1</em></span></a></li>
+                <li class="fl tc p5 pr"><a href="#"><i class="fa fa-stack-overflow block mb5 mt5"></i>待评价<span class="ps spanIcon tc w20 mt5 none"><i class="abs-r w20 h20"></i><em>1</em></span></a></li>
+                <li class="fl tc p5 pr"><a href="#"><i class="fa fa-jpy block mb5 mt5"></i>退款/售后<span class="ps spanIcon tc w20 mt5"><i class="abs-r w20 h20"></i><em>1</em></span></a></li>
+            </ul>
+            <div class="AllOrder">
+                <a href="#" class="block p10">
+                    <i class="fa fa-table mr10 p10"></i>
+                    全部订单
+                    <span class="fr">查看全部订单<i class="fa fa-angle-right fr ml10"></i></span>
+                </a>
+            </div>
+        </div>
+        <div class="mt20 ListOrder">
+            <ul class="list-group">
+                <li class="list-group-item justify-content-between">
+                    <a href="#" class="block">
+                        <i class="fa fa-table mr10 p10" style="background-color:#f3ba14;"></i>
+                        购物车
+                        <i class="fa fa-angle-right fr ml10 mt10"></i>
+                        <span class="badge badge-default badge-pill mt10">14</span>
+                    </a>
+                </li>
+                <li class="list-group-item justify-content-between">
+                    <a href="#" class="block">
+                        <i class="fa fa-table mr10 p10" style="background-color:#1888cc;"></i>
+                        搜索
+                        <i class="fa fa-angle-right fr ml10 mt10"></i>
+                        <span class="badge badge-default badge-pill mt10">2</span>
+                    </a>
+                </li>
+                <li class="list-group-item justify-content-between">
+                    <a href="#" class="block">
+                        <i class="fa fa-table mr10 p10" style="background-color:#52beff;"></i>
+                        支付宝
+                        <i class="fa fa-angle-right fr ml10 mt10"></i>
+                        <span class="badge badge-default badge-pill mt10">1</span>
+                    </a>
+                </li>
+                <li class="list-group-item justify-content-between">
+                    <a href="#" class="block">
+                        <i class="fa fa-table mr10 p10" style="background-color:#2ea1e6;"></i>
+                        旺旺
+                        <i class="fa fa-angle-right fr ml10 mt10"></i>
+                        <span class="badge badge-default badge-pill mt10">1</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-group mt20">
+                <li class="list-group-item justify-content-between">
+                    <a href="#" class="block">
+                        <i class="fa fa-table mr10 p10" style="background-color:#e03434;"></i>
+                        我的彩票
+                        <i class="fa fa-angle-right fr ml10 mt10"></i>
+                        <span class="badge badge-default badge-pill mt10">14</span>
+                    </a>
+                </li>
+                <li class="list-group-item justify-content-between">
+                    <a href="#" class="block">
+                        <i class="fa fa-table mr10 p10" style="background-color:#2ea1e6;"></i>
+                        我的机票
+                        <i class="fa fa-angle-right fr ml10 mt10"></i>
+                        <span class="badge badge-default badge-pill mt10">2</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--第1种底部fixed-->
+    <nav class="navbar fixed-bottom navbar-inverse pagBtm">
+        <table class="table" cellpadding="0" border="0">
+            <tbody>
+                <tr>
+                    <td><a href="javascript:;"><i class="fa fa-home"></i>首页</a></td>
+                    <td><a href="cart.html"><i class="fa fa-shopping-cart"></i>购物车</a></td>
+                    <td><a href="javascript:;"><i class="fa fa-th-list"></i>分类</a></td>
+                    <td><a href="User.html"><i class="fa fa-user-circle-o"></i>个人中心</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </nav>
+    <!--设置-->
+    <article class="SetUpBox pf">
+        <div class="SUHead tc p10">
+            <i class="fa fa-angle-left fl mt5"></i>
+            设置
+            <a href="One.html" class="fr"><i class="fa fa-home mt5"></i></a>
+        </div>
+        <ul class="list-group mt20">
+            <li class="list-group-item justify-content-between">
+                收货地址
+                <span class="badge badge-default badge-pill"><i class="fa fa-angle-right"></i></span>
+            </li>
+        </ul>
+        <div class="p10">
+            <button type="button" class="btn btn-danger block mt20" style="width:100%;">退出当前账户</button>
+        </div>
+    </article>
+    <!--设置中的收货地址设置-->
+    <div class="Address pf">
+        <div class="SUHead tc p10">
+            <i class="fa fa-angle-left fl mt5"></i>
+            管理收货地址
+        </div>
+        <!--收获地址列表-->
+        <div class="AddressList">
+            <ul>
+                <li>
+                    <p class="AddressHead">收货人：怕浪费 <span class="fr">18358904097</span></p>
+                </li>
+            </ul>
+        </div>
+        <!--收获地址修改-->
+        <!--收获地址修改-->
+    </div>
+</body>
+</html>
