@@ -1,0 +1,214 @@
+/**
+* CSS Reset
+* 内容：清除和重置和通用功能
+* 维护：yzl
+* 版本: V1.0;
+* 日期:2016/1/31;
+* 测试浏览器:IE 6+, Firefox 3.5+, Safari 4+, Chrome 2+, Opera 10+ ;
+* 注意点:清除内外边距的元素，去掉了 div, code（在测试浏览器中，没发现有边距）, 增加了 button（感觉是 YUI 遗漏了）. 
+	去掉了 YUI 里对 html 颜色和背景色的设置。在测试浏览器中，没有发现差异。（要设的话，推荐background: transparent） 
+	对于 address, caption, …, em, strong 等文本格式元素，做了调整。保留了 strong 和 th 的粗体。 
+	对 abbr 和 acronym 做了调整，使得在非 ie6 下可视性更好。 
+	去掉了 sup 和 sub 的样式，直接用浏览器默认的即可。 
+	对于 input, select, textarea 表单元素，去掉了针对 ie 的 inherit, 只保留了 font-size 的 inherit hack. 因为其它 hack 经测试已失效。 
+	增加了一些元素的默认样式。;
+**/
+
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 除去div 由于div在测试的浏览器中不存在padding和margin */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+/*重置表格边框之间的空隙和合并*/
+table{border-spacing: 0; border-collapse: 0}
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+
+/* 重置表单元素 */
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: 0 none; } /* img 搭车：让链接里的 img 无边框 */
+
+/*将字体和字体大小设为正常*/
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+h1,h2,h3,h4,h5,h6{font-size: 100%; font-weight: normal;}
+
+button, input, select, textarea {
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+}
+/*去除苹果手机按钮默认样式*/
+input[type="button"],input[type="submit"],input[type="reset"],input[type="text"],input[type="file"]{
+    -webkit-appearance:none;
+}
+textarea {
+    -webkit-appearance: none;
+}
+/*颜色块问题*/
+a{
+    text-decoration:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/*文字排版*/
+.f12 {
+    font-size: 12px
+}
+.f13{font-size: 13px}
+.f14{font-size: 14px}
+.f16{font-size: 16px}
+.f18{font-size: 18px}
+.f20{font-size: 20px}
+.fb{font-weight: bolder;}
+.fm{font-weight: normal;}
+.t2{text-indent: 2em;}
+.lh150{line-height:150% }
+.lh180{line-height:180% }
+.lh200{line-height:200% }
+.unl{text-decoration: underline;}
+
+/*水平定位*/
+.tc{text-align: center;}
+.tl{text-align: left;}
+.tr{text-align: right;}
+.fl{float: left; display: inline;}
+.fr{float: right;display: inline;}
+.at{margin-left:auto;margin-right: auto;}
+
+/*清除浮动*/
+.cb{clear: both;}
+.cl{clear: left;}
+.cr{clear: right;}
+.clearfix:after{content:"."; display: block; height: 0; 
+	font-size: 0;line-height: 0 ;
+	clear: both; visibility: hidden;}
+.clearfix{zoom:1;} /*兼容ie浏览器触发haslayout属性*/
+.zoom{zoom: 1;}
+.vm{vertical-align: middle;}
+.pr{position: relative;}
+.ps{position: absolute;}
+.pf{position: fixed}
+.abs-r{position: absolute; right: 0}
+.abs-t{position: absolute; top:0;}
+
+.hidden{visibility: hidden;}
+.visible{visibility: visible;}
+.none{display: none;}
+.block{display: block;}
+.dib{display: inline-block;}
+.boxb{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing:border-box;
+    box-sizing: border-box;
+}
+
+/*长度高度*/
+.w10{width: 10px;}
+.w20{width: 20px;}
+.w30{width: 30px;}
+.w40{width: 40px;}
+.w50{width: 50px;}
+.w60{width: 60px;}
+.w70{width: 70px;}
+.w80{width: 80px;}
+.w90{width: 90px;}
+.w100{width: 100px;}
+.w150{width: 150px;}
+.w180{width: 180px;}
+.w200{width: 200px;}
+.w250{width: 250px;}
+.w300{width: 300px;}
+.w320{width: 320px;}
+.w350{width: 350px;}
+.w400{width: 400px;}
+.w450{width: 450px;}
+.w500{width: 500px;}
+.w550{width: 550px;}
+.w600{width: 600px;}
+.w700{width: 700px;}
+.w800{width: 800px;}
+.w900{width: 900px;}
+.w980{width: 980px;}
+.w1000{width: 1000px;}
+.w1200{width: 1200px;}
+.w{width: 100%}
+.h5{height: 5px;}
+.h10{height: 10px;}
+.h20{height: 20px;}
+.h30{height: 30px;}
+.h40{height: 40px;}
+.h50{height: 50px;}
+.h60{height: 60px;}
+.h70{height: 70px;}
+.h80{height: 80px;}
+.h90{height: 90px;}
+.h100{height: 100px;}
+.h150{height: 150px;}
+.h180{height: 180px;}
+.h200{height: 200px;}
+.h250{height: 250px;}
+.h300{height: 300px;}
+.h320{height: 320px;}
+.h350{height: 350px;}
+.h{height: 100%;}
+.mh100{min-height: 100px}
+.mh150{min-height: 150px}
+.mh200{min-height: 200px}
+.mh300{min-height: 300px}
+/*边距*/
+.m5{margin:5px;}
+.m10{margin:10px;}
+.m15{margin:15px;}
+.m20{margin:20px;}
+.m30{margin:30px;}
+.mt5{margin-top: 5px}
+.mt10{margin-top: 10px}
+.mt15{margin-top: 15px}
+.mt20{margin-top: 20px}
+.mr5{margin-right: 5px}
+.mr10{margin-right: 10px}
+.mr15{margin-right: 15px}
+.mr20{margin-right: 20px}
+.ml5{margin-left: 5px}
+.ml10{margin-left: 10px}
+.ml15{margin-left: 15px}
+.ml20{margin-left: 20px}
+.mb5{margin-bottom: 5px}
+.mb10{margin-bottom: 10px}
+.mb15{margin-bottom: 15px}
+.mb20{margin-bottom: 20px}
+.p5{padding:5px;}
+.p10{padding:10px;}
+.p15{padding:15px;}
+.p20{padding:20px;}
+.p30{padding:30px;}
+.p50{padding:50px;}
+.pt5{padding-top: 5px}
+.pt10{padding-top: 10px}
+.pt15{padding-top: 15px}
+.pt20{padding-top: 20px}
+.pb5{padding-bottom: 5px}
+.pb10{padding-bottom: 10px}
+.pb15{padding-bottom: 15px}
+.pb20{padding-bottom: 20px}
+.pb30{padding-bottom: 30px}
+.pb50{padding-bottom: 50px}
+
+
+
+
+
+
+

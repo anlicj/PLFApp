@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>练习</title>
+    <!--CSS3液态环形图标菜单-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!--字体图标-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="font/css/font-awesome.min.css" rel="stylesheet" />
+    <!--默认公共样式-->
+    <link href="font/css/base.css" rel="stylesheet" />
+    <link href="css/public.css" rel="stylesheet" />
+    <!--滚动图片样式-->
+    <link href="css/scrollPublic.css" rel="stylesheet" />
+    <link href="css/swiper.min.css" rel="stylesheet" />
+    <!--本页面样式-->
+    <link href="css/One.css" rel="stylesheet" />   
+    <!--返顶+滚动广告-->
+    <script src="scripts/swiper.min.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <!--倒计时-->
+    <script src="scripts/timer.js"></script>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-inverse OneNav pf">
+        <a href="Login.html"><i class="fa fa-user"></i></a>
+        <div class="searchBox">
+            <input type="text" placeholder="输入商品名称" class="searchTxt" />
+            <button class="searchBtn"><i class="fa fa-search"></i></button>
+        </div>
+        <a href="javascript:;"><i class="fa fa-home"></i></a>
+    </nav>
+    <header>
+        <!--滚动图-->
+        <!-- Swiper -->
+        <section class="pc-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-center none-effect"><a href="#"><img src="images/10225357963.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/10250290397.png"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/10225357963.jpg"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/10250290397.png"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="images/10225357963.jpg"></a></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+    </header>
+    <!--内容-->
+    <div class="contBox">
+        <!--logo大类导航-->
+        <nav class="logoNav">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td><a href="javascript:;"><i class="logoNavimg tm1"></i>天猫</a></td>
+                        <td><a href="javascript:;"><i class="logoNavimg tm2"></i>天猫</a></td>
+                        <td><a href="javascript:;"><i class="logoNavimg tm3"></i>天猫</a></td>
+                        <td><a href="javascript:;"><i class="logoNavimg tm4"></i>天猫</a></td>
+                        <td><a href="javascript:;"><i class="logoNavimg tm5"></i>天猫</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="javascript:;"><i class="logoNavimg tm5"></i>天猫</a></td>
+                        <td><a href="javascript:;"><i class="logoNavimg tm4"></i>天猫</a></td>
+                        <td><a href="javascript:;"><i class="logoNavimg tm3"></i>天猫</a></td>
+                        <td><a href="javascript:;"><i class="logoNavimg tm2"></i>天猫</a></td>
+                        <td><a href="javascript:;"><i class="logoNavimg tm1"></i>天猫</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </nav>
+        <!--滚动播放全站公告-->
+        <!--新闻滚动-->
+        <div class="vueBox">
+            <div class="marquee mb10">
+                <div class="marquee_title p10">
+                    <img src="images/toutiao.png" />
+                </div>
+                <div class="marquee_box">
+                    <ul class="marquee_list" :class="{marquee_top:animate}">
+                        <li v-for="(item, index) in marqueeList">
+                            {{item.txt}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--抢购-->
+        <div class="RushToPur mb10">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td rowspan="2">
+                            <a href="javascript:;">
+                                <img src="images/RushToPurrow.jpg" class="rowImg" />
+                                <!--抢购倒计时-->
+                                <section class="paymentOrder">
+                                    <span id="j_Hour">09</span>
+                                    <span>:</span>
+                                    <span id="J_Minute">20</span>
+                                    <span>:</span>
+                                    <span id="J_Second">00</span>
+                                </section>
+                            </a>
+                        </td>
+                        <td><a href="javascript:;"><img src="images/RushToPur1.png" /></a></td>
+                        <td><a href="javascript:;"><img src="images/RushToPur2.jpg" /></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="javascript:;"><img src="images/RushToPur3.jpg" /></a></td>
+                        <td><a href="javascript:;"><img src="images/RushToPur4.jpg" /></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--实惠购物-->
+        <div class="Discountshop mb10">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th colspan="4"><i class="fa fa-tag"></i>超实惠</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><a href="javascript:;"><img src="images/Discountshopd1.jpg" /></a></th>
+                        <td><a href="javascript:;"><img src="images/Discountshopx1.png" /></a></td>
+                        <td><a href="javascript:;"><img src="images/Discountshopx2.png" /></a></td>
+                        <td><a href="javascript:;"><img src="images/Discountshopx3.jpg" /></a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a href="javascript:;"><img src="images/Discountshopd2.png" /></a></th>
+                        <td><a href="javascript:;"><img src="images/Discountshopx4.jpg" /></a></td>
+                        <td><a href="javascript:;"><img src="images/Discountshopx5.jpg" /></a></td>
+                        <td><a href="javascript:;"><img src="images/Discountshopx6.png" /></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--必逛-->
+        <div class="Discountshop MustGoshop mb10">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th colspan="4"><i class="fa fa-firefox"></i>超市必逛</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2"><a href="javascript:;"><img src="images/Discountshopd1.jpg" /></a></td>
+                        <td colspan="2"><a href="javascript:;"><img src="images/Discountshopd2.png" /></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="javascript:;"><img src="images/Discountshopx1.png" /></a></td>
+                        <td><a href="javascript:;"><img src="images/Discountshopx2.png" /></a></td>
+                        <td><a href="javascript:;"><img src="images/Discountshopx3.jpg" /></a></td>
+                        <td><a href="javascript:;"><img src="images/Discountshopx4.jpg" /></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--一张广告图片-->
+        <div class="OneImg mb10">
+            <a href="javascript:;"><img src="images/indexGaogao.png" /></a>
+        </div>
+        <!--猜你喜欢-->
+        <div class="GuessYouLike mb10">
+            <h3><i class="fa fa-heartbeat mr10"></i>猜你喜欢</h3>
+            <p class="head mt5">实时推荐最适合你的宝贝</p>
+            <ul class="GuessYouLikeList">
+                <li class="fl">
+                    <a href="detail.html">
+                        <img src="images/shiyan1.jpg" />
+                        <p class="guessCont m5">[为你推荐]包邮 男女士网眼洗浴包/洗澡包/浴包/洗漱包/游泳包/浴兜</p>
+                        <p class="p10 Pricetxt">&yen;150</p>
+                    </a>
+                </li>
+                <li class="fl">
+                    <a href="detail.html">
+                        <img src="images/shiyan2.jpg" />
+                        <p class="guessCont m5">[为你推荐]包邮 男女士网眼洗浴包/洗澡包/浴包/洗漱包/游泳包/浴兜</p>
+                        <p class="p10 Pricetxt">&yen;150</p>
+                    </a>
+                </li>
+                <li class="fl">
+                    <a href="detail.html">
+                        <img src="images/shiyan2.jpg" />
+                        <p class="guessCont m5">[为你推荐]包邮 男女士网眼洗浴包/洗澡包/浴包/洗漱包/游泳包/浴兜</p>
+                        <p class="p10 Pricetxt">&yen;150</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--底部-->
+    <footer>
+        <div class="btmFooter">
+            <div class="footerLink">
+                <a href="javascript:;">登录</a>
+                <a href="javascript:;">注册</a>
+                <a href="javascript:;">电脑版</a>
+                <a href="javascript:;">用户反馈</a>
+            </div>
+            <p class="copyright"><pre>2016 浙 B2-20080224 服务中心</pre></p>
+        </div>
+    </footer>
+    <!--第1种底部fixed-->
+    <nav class="navbar fixed-bottom navbar-inverse pagBtm">
+        <table class="table" cellpadding="0" border="0">
+            <tbody>
+                <tr>
+                    <td><a href="javascript:;"><i class="fa fa-home"></i>首页</a></td>
+                    <td><a href="cart.html"><i class="fa fa-shopping-cart"></i>购物车</a></td>
+                    <td><a href="javascript:;"><i class="fa fa-th-list"></i>分类</a></td>
+                    <td><a href="User.html"><i class="fa fa-user-circle-o"></i>个人中心</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </nav>
+    <!--第2种底部fixed-->
+    <div class="none">
+        <main class='container'>
+            <div class='wrap'>
+                <input type='checkbox' id='checking' style='display:none;' />
+                <button class='blob'>&#x2605;</button>
+                <button class='blob'>&#x2709;</button>
+                <button class='blob'>&#x2699;</button>
+                <button class='blob'>&#x2764;</button>
+                <button class='blob'>&#x270C;</button>
+                <button class='blob'>&#x270E;</button>
+                <button class='blob'>&#x266B;</button>
+                <button class='blob'>&#x2706;</button>
+                <label class='blob' for='checking'>
+                    <span class='bar'></span>
+                    <span class='bar'></span>
+                    <span class='bar'></span>
+                </label>
+            </div>
+        </main>
+        <svg>
+            <defs>
+                <filter id="filt">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="filt" />
+                    <feBlend in2="filt" in="SourceGraphic" result="mix" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
+    <!--返顶-->
+    <div class="gotop backtop" id="GoTop" style="display:none;"><i class="fa fa-arrow-circle-up"></i></div>
+
+    <!--文字上下滚动-->
+    <script src="scripts/vue.min.js"></script>
+    <script src="scripts/txtscroll.js"></script>
+</body>
+</html>

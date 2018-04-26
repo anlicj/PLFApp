@@ -1,0 +1,296 @@
+﻿input:focus,button:focus{
+    outline:none;
+}
+body{
+    min-height:1000px;
+}
+.table td{
+    box-sizing:border-box;
+}
+.OneNav {
+    background-color: #de2a2a;
+    background: linear-gradient(to bottom right, #ff8b78, #de2a2a);
+    background: -webkit-linear-gradient(to bottom right, #ff8b78, #de2a2a);
+    background: -moz-linear-gradient(to bottom right, #ff8b78, #de2a2a);
+    background: -o-linear-gradient(to bottom right, #ff8b78, #de2a2a);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42px;
+}
+.OneNav .fa-user, .OneNav .fa-home {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 26px;
+}
+.searchBox {
+    overflow: hidden;
+    width: 80%;
+    padding: 0px 5px;
+    background-color: #b93c38;
+    border-radius:3px;
+}
+.searchBox .searchTxt, .searchBox .searchBtn {
+    height: 26px;
+    line-height: 26px;
+    border-width: 0;
+    border-color: transparent;
+    color: #fff;
+    background-color: transparent;
+    float: left;
+    font-size:14px;
+}
+.searchBox .searchTxt{
+    width:80%;
+}
+.searchBox .searchBtn{
+    width:20%;
+    text-align:right;
+}
+input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #fff;
+}
+
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+header {
+    margin-top: 42px;
+}
+/*logo大类导航*/
+.logoNav{
+    background-color:#fff;
+}
+.logoNav td{
+    width:20%;
+    text-align:center;
+    border:0;
+}
+.logoNavimg {
+    box-sizing: border-box;
+    line-height: 0;
+    width: 3rem;
+    height: 3rem;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.313rem;
+    border-radius: 100%;
+}
+.logoNav .tm1 {
+    background-image: url(../images/tm1.png);
+}
+.logoNav .tm2 {
+    background-image: url(../images/tm2.png);
+}
+.logoNav .tm3 {
+    background-image: url(../images/tm3.png);
+}
+.logoNav .tm4 {
+    background-image: url(../images/tm4.png);
+}
+.logoNav .tm5 {
+    background-image: url(../images/tm5.png);
+}
+/*文字公告滚动*/
+.marquee {
+    width: 100%;
+    align-items: center;
+    color: #3A3A3A;
+    display: flex;
+    box-sizing: border-box;
+    background-color:#fff;
+    border-bottom:1px solid #eee;
+}
+.marquee_title {
+    align-items: center;
+}
+.marquee_title img {
+    height: 27px;
+}
+.marquee_box {
+    display: block;
+    position: relative;
+    width: 60%;
+    height: 27px;
+    line-height:27px;
+    overflow: hidden;
+}
+.marquee_list {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.marquee_top {
+    transition: all 0.5s;
+    margin-top: -30px
+}
+.marquee_list li {
+    font-size: 14px;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 20px;
+}
+.marquee_list li span {
+    padding: 0 2px;
+}
+/*中间内容*/
+.contBox .table .fa {
+    display: inline;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.RushToPur, .Discountshop, .MustGoshop {
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+}
+/*抢购*/
+.RushToPur .table td{
+    padding:0;
+}
+.RushToPur img {
+    max-height: 90px;
+}
+.RushToPur img.rowImg {
+    height: 200px;
+    max-height: 200px;
+}
+/*倒计时*/
+.RushToPur td a {
+    position: relative;
+    display: block;
+}
+.RushToPur .paymentOrder {
+    position:absolute;
+    left:10px;
+    top:30%;
+    z-index:1;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#j_Hour, #J_Minute, #J_Second {
+    color: #fff;
+    vertical-align: sub;
+    background: #868585;
+    padding: 4px;
+}
+/*实惠购物*/
+.Discountshop .table th {
+    text-align: center;
+    border-bottom: 0;
+    color: #ff8b78;
+}
+/*必逛*/
+.MustGoshop{
+
+}
+/*一张广告图片*/
+.OneImg img{
+    width:100%;
+}
+/*猜你喜欢*/
+.GuessYouLike h3, .GuessYouLike .head {
+    font-weight: bold;
+    text-align: center;
+}
+.GuessYouLike h3 .fa{
+    color:red;
+}
+.GuessYouLike .head {
+    color: #999;
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+.GuessYouLikeList{
+    overflow:hidden;
+    padding:2px;
+}
+.GuessYouLikeList li {
+    padding: 2px;
+    width: 50%;
+    box-sizing: border-box;
+}
+.GuessYouLikeList li a{
+    display:block;
+    background-color:#fff;
+}
+.GuessYouLikeList .guessCont {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.2rem;
+    height: 2.4rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.Pricetxt{
+    color:red;
+}
+/*底部footer*/
+footer {
+    margin-bottom: 67px;
+}
+.btmFooter {
+    background: #4e525e;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+}
+.btmFooter pre {
+    color: #fff;
+}
+.footerLink{
+    margin-bottom:10px;
+}
+.footerLink a {
+    width: 23%;
+    margin-left: 1%;
+    display: inline-block;
+    background: #44474e;
+    color: #afafaf;
+    border-radius: 4px;
+    padding: 10px 0px;
+    border: 1px solid #827c7c;
+    font-size: 0.9rem;
+    box-sizing:border-box;
+}
+/*底部pagBtm*/
+.pagBtm {
+    background: #fff;
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.table{
+    margin:0;
+}
+.pagBtm .table td {
+    border: 0;
+    padding: 0;
+    text-align: center;
+    width: 25%;
+}
+.table a{
+    color:#888;
+    font-size:0.8rem;
+}
+.table .fa {
+    display: block;
+    font-size: 21px;
+    margin-bottom: 5px;
+}

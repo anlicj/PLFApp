@@ -1,0 +1,11 @@
+{
+  "android": {
+    "release": {
+      "keystore": "D:\\android-keyStores\\PLFApp.keystore",
+      "storePassword": "123456",
+      "alias": "PLFApp.keystore",
+      "password": "123456",
+      "keystoreType": ""
+    }
+  }
+}
