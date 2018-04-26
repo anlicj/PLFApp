@@ -10,7 +10,7 @@
         //全选
         //加减
     }
-    //编辑
+    //编辑 
     function EditButton() {
         var shopBtn = document.getElementsByClassName("shopTBtn");
         var tab = document.getElementsByClassName("ShopbundleTab");
