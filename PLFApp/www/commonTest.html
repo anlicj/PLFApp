@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-inline';connect-src http://localhost:56325;img-src http://localhost:56325 'self';script-src 'self' 'unsafe-inline' 'unsafe-eval';object-src 'none';  media-src *">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>测试页</title>
+</head>
+<body ng-app="mainApp">
+    <div ng-controller="ctrl">
+        <h3>{{showInfo}}</h3>
+        <button ng-click="access()">访问资源</button>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/app-common.js"></script>
+    <script type="text/javascript">
+        angular.module('mainApp', ['app-common']).controller('ctrl', function ($scope, $authHttp) {
+            $scope.showInfo = '';
+            $scope.access = function () {
+                $authHttp.get('http://localhost:56325/api/Goods').then(function (res) {
+                    $scope.showInfo = '授权成功';
+                }, function (res) {
+                    $scope.showInfo = '授权失败';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
