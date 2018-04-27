@@ -54,7 +54,9 @@
         for (var i = 0; i < checkTD.length; i++) {
             var alonecheck = checkTD[i].getElementsByClassName("alonecheck");
             for (var j = 0; j < alonecheck.length; j++) {
-                alonecheck[j].checked = true;
+                alonecheck[j].checked = true;//错误
+                //fa fa-check-square-o mr15 ml20 alonecheck alonechecked
+
             }
         }
     }

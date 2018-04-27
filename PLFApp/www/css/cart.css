@@ -22,7 +22,7 @@
     font-size: 1.3rem;
     vertical-align: middle;
 }
-.Shopbundle .ShopTitle .icon {
+.Shopbundle .ShopTitle .icon, .Shopbundle .checkTD .icon {
     color: #ff6a00;
 }
 .ShopTitle a {
