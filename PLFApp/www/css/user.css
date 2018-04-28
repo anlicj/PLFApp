@@ -11,6 +11,9 @@ header {
     background-size: cover;
     display: block;
 }
+input:focus{
+    outline:none;
+}
 .userImg {
     left: 10px;
     bottom: 10px;
@@ -117,6 +120,66 @@ header {
 .Address {
     z-index: 1051;
 }
+.AddressList ul {
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.AddressList li {
+    border-bottom: 1px solid #ccc;
+}
+.AddressList li:last-child {
+    border-bottom:0;
+}
+.AddressHead, .AddressTxt {
+    width: 80%;
+}
+.AddressList .fa-check {
+    color: #fff;
+    top: 50%;
+    font-size:1.2rem;
+    margin-top:-8px;
+}
+.AddressList .addLi {
+    background-color: #5e6b85;
+    color:#fff;
+}
+/*新增地址*/
+.NewAddress li, .EditAddress li{
+    border-bottom: 1px solid #f0f0f0;
+}
+.NewAddressTxt {
+    background-color: transparent;
+    border: 0;
+    width:80%;
+}
+.NewAddress .fa-angle-right, .EditAddress .fa-angle-right {
+    font-size: 1.2rem;
+}
+/*修改地址 ↑↓*/
+.setMup{
+    color:#666;
+    margin-bottom:50px;
+}
+.setMup input[type=checkbox] {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-size: 2rem;
+    min-height: 0;
+    margin-right: .25rem;
+    background-image: url('../images/checkImg.png');
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    vertical-align: middle;
+}
+.setMup input[type=checkbox]:checked {
+    background-image: url('../images/checkedImg.png');
+}
+.deleteBtn input[type=button]{
+    border:0;
+    background-color:transparent;
+    color:#ff6a00;
+}
+/*end*/
 /*底部pagBtm*/
 .pagBtm {
     background: #fff;

@@ -1,4 +1,7 @@
-﻿/*头部*/
+﻿input:focus{
+    outline:none;
+}
+/*头部*/
 .headBox{
     border-bottom:1px solid #eee;
     background-color:#fff;
@@ -17,11 +20,6 @@
     background-color:#fff;
     padding:10px 0px;
 }
-.ShopTitle .fa-check-square-o, .shopCont .fa-check-square-o {
-    color: #bbb;
-    font-size: 1.3rem;
-    vertical-align: middle;
-}
 .Shopbundle .ShopTitle .icon, .Shopbundle .checkTD .icon {
     color: #ff6a00;
 }
@@ -30,7 +28,7 @@
 }
 .ShopTitle .fa-angle-right {
     font-size: 1.5rem;
-    vertical-align: top;
+    margin-top:2px;
 }
 .shopTBtn {
     background-color: transparent;
@@ -90,9 +88,24 @@
 .tcRed{
     color:red;
 }
+/*input[type=checkbox]*/
+.shopCheck[type=checkbox] {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-size: 2rem;
+    min-height: 0;
+    background-image: url('../images/checkImg.png');
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    vertical-align: bottom;
+}
+
+.shopCheck[type=checkbox]:checked {
+    background-image: url('../images/checkedImg.png');
+}
 /*数量和套餐编辑*/
-.shopInforEdit{
-    overflow:hidden;
+.shopInforEdit {
+    overflow: hidden;
 }
 .TwoEdit {
     width: 80%;

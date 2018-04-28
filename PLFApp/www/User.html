@@ -16,9 +16,7 @@
     <link href="css/user.css" rel="stylesheet" />
     <!--angularJs测试-->
     <script src="scripts/angular.min.js"></script>
-    <script src="scripts/jquery-1.10.2.js"></script>
-    <!--字体图标-->
-    <script src="scripts/bootstrap.min.js"></script>
+    <!--本页js-->
 </head>
 <body>
     <header class="pr">
@@ -157,15 +155,118 @@
             管理收货地址
         </div>
         <!--收获地址列表-->
-        <div class="AddressList">
-            <ul>
-                <li>
+        <div class="AddressList none">
+            <ul class="p5 mb20">
+                <li class="pr p5 addLi">
                     <p class="AddressHead">收货人：怕浪费 <span class="fr">18358904097</span></p>
+                    <p class="AddressTxt">浙江省金华市婺城区新华街浙中信息产业园301号信息大厦908</p>
+                    <i class="fa fa-check abs-r mr5"></i>
+                </li>
+                <li class="pr p5">
+                    <p class="AddressHead">收货人：怕浪费 <span class="fr">18358904097</span></p>
+                    <p class="AddressTxt">浙江省金华市婺城区新华街浙中信息产业园301号信息大厦908</p>
+                    <i class="fa fa-check abs-r mr5"></i>
+                </li>
+                <li class="pr p5">
+                    <p class="AddressHead">收货人：怕浪费 <span class="fr">18358904097</span></p>
+                    <p class="AddressTxt">浙江省金华市婺城区新华街浙中信息产业园301号信息大厦908</p>
+                    <i class="fa fa-check abs-r mr5"></i>
                 </li>
             </ul>
+            <button type="button" class="btn btn-danger block" style="width:80%;margin:0 auto;">新增收货地址</button>
         </div>
-        <!--收获地址修改-->
-        <!--收获地址修改-->
+        <!--新增收货-->
+        <div class="NewAddress none">
+            <!--省市区-->
+            <ul class="mb20">
+                <li class="p10 pr">
+                    <div class="PUAadress">
+                        <input type="text" placeholder="请输入详细地址" class="NewAddressTxt" />
+                        <i class="fa fa-angle-right abs-r mr10"></i>
+                    </div>
+                </li>
+                <li class="p10 pr">
+                    <div class="PUAadress">
+                        <input type="text" placeholder="请输入详细地址" class="NewAddressTxt" />
+                        <i class="fa fa-angle-right abs-r mr10"></i>
+                    </div>
+                </li>
+                <li class="p10 pr">
+                    <div class="PUAadress">
+                        <input type="text" placeholder="请输入详细地址" class="NewAddressTxt" />
+                        <i class="fa fa-angle-right abs-r mr10"></i>
+                    </div>
+                </li>
+                <li class="p10 pr">
+                    <div class="PUAadress">
+                        <input type="text" placeholder="请输入详细地址" class="NewAddressTxt" />
+                        <i class="fa fa-angle-right abs-r mr10"></i>
+                    </div>
+                </li>
+                <li class="p10 pr">
+                    <div class="PUAadress">
+                        <input type="text" placeholder="请输入收货人姓名" class="NewAddressTxt" />
+                        <i class="fa fa-angle-right abs-r mr10"></i>
+                    </div>
+                </li>
+                <li class="p10 pr">
+                    <div class="PUAadress">
+                        <input type="text" placeholder="请输入收货人联系电话" class="NewAddressTxt" />
+                        <i class="fa fa-angle-right abs-r mr10"></i>
+                    </div>
+                </li>
+            </ul>
+            <button type="button" class="btn btn-danger block" style="width:80%;margin:0 auto;">保存地址</button>
+        </div>
+        <!--修改地址-->
+        <div class="EditAddress">
+            <!--省市区-->
+            <ul class="mb20">
+                <li class="p10 pr">
+                    <div class="PUAadress">
+                        <input type="text" placeholder="请输入详细地址" class="NewAddressTxt" />
+                        <i class="fa fa-angle-right abs-r mr10"></i>
+                    </div>
+                </li>
+                <li class="p10 pr">
+                    <div class="PUAadress">
+                        <input type="text" placeholder="请输入详细地址" class="NewAddressTxt" />
+                        <i class="fa fa-angle-right abs-r mr10"></i>
+                    </div>
+                </li>
+                <li class="p10 pr">
+                    <div class="PUAadress">
+                        <input type="text" placeholder="请输入详细地址" class="NewAddressTxt" />
+                        <i class="fa fa-angle-right abs-r mr10"></i>
+                    </div>
+                </li>
+                <li class="p10 pr">
+                    <div class="PUAadress">
+                        <input type="text" placeholder="请输入详细地址" class="NewAddressTxt" />
+                        <i class="fa fa-angle-right abs-r mr10"></i>
+                    </div>
+                </li>
+                <li class="p10 pr">
+                    <div class="PUAadress">
+                        <input type="text" placeholder="请输入收货人姓名" class="NewAddressTxt" />
+                        <i class="fa fa-angle-right abs-r mr10"></i>
+                    </div>
+                </li>
+                <li class="p10 pr">
+                    <div class="PUAadress">
+                        <input type="text" placeholder="请输入收货人联系电话" class="NewAddressTxt" />
+                        <i class="fa fa-angle-right abs-r mr10"></i>
+                    </div>
+                </li>
+            </ul>
+            <div class="setMup">
+                <input type="checkbox" >设置为默认收货地址
+                <p class="deleteBtn p5">
+                    <input type="button" value="删除收货地址" />
+                </p>
+            </div>
+            <button type="button" class="btn btn-danger block" style="width:80%;margin:0 auto;">保存地址</button>
+        </div>
     </div>
 </body>
 </html>

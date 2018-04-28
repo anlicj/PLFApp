@@ -4,11 +4,8 @@
     function onDeviceReady() {
         //编辑
         document.getElementsByClassName("shopTBtn")[0].addEventListener("click", EditButton);
-        //单选
-        document.getElementsByClassName("checkI")[0].addEventListener("click", AloneCheck);
-        //多选
+        //商店多选
         //全选
-        document.getElementById("CheckAll").addEventListener("click", CheckAllBtn);
         //加减
     }
     //编辑
@@ -49,41 +46,8 @@
             }
         }
     }
-    //单选(还没写完)
-    function AloneCheck() {
-        var checkTD = document.getElementsByClassName("checkTD");
-        for (var i = 0; i < checkTD.length; i++) {
-            var alonecheck = checkTD[i].getElementsByClassName("alonecheck");
-            var faCheck = checkTD[i].getElementsByClassName("fa-check-square-o");
-            for (var j = 0; j < faCheck.length; j++) {
-                if (faCheck[j].className == "fa fa-check-square-o mr15 ml20 checkI") {
-                    faCheck[j].className = "fa fa-check-square-o mr15 ml20 checkI icon";
-                    alonecheck[j].checked = true;
-                } else {
-                    faCheck[j].className = "fa fa-check-square-o mr15 ml20 checkI";
-                    alonecheck[j].checked = false;
-                }
-            }
-        }
-    }
-    //多选
+    //商店多选
     //全选
-    function CheckAllBtn() {
-        var All = document.getElementById("CheckAll");
-        var faCheck = document.getElementsByClassName("fa-check-square-o");
-        var checkbtn = document.getElementsByClassName("check-btn");
-        for (var i = 0; i < faCheck.length; i++) {
-            if (All.className == "checkBox p10") {
-                All.className = "checkBox p10 hover";
-                faCheck[i].classList.add('icon');
-                checkbtn[i].checked = true;
-            } else {
-                All.className = "checkBox p10";
-                faCheck[i].classList.remove('icon');
-                checkbtn[i].checked = false;
-            }
-        }
-    }
     //加减
     //function Arithmetic() {
     //    var CartShopList = document.getElementById('CartShopList');//全部内容
